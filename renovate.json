@@ -1,0 +1,13 @@
+{
+  "packageRules": [
+    {
+      "datasources": ["maven", "npm", "pypi"],
+      "updateTypes": ["patch", "minor", "major"],
+      "prBodyColumns": ["Package",  "Update" , "New value","Current value","Change", "Package file"],
+      "prBodyDefinitions": { "Package": "`{{{depName}}}`"}
+    }
+  ],
+  "dependencyDashboard": true,
+  "major": {"dependencyDashboardApproval": true},
+  "prCreation": "not-pending"
+}
